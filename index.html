@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Poppins:ital,wght@0,800;1,200&display=swap" rel="stylesheet">
-  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500&family=Poppins:ital,wght@0,800;1,200&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -20,59 +22,75 @@
     }
 
     body{
-      padding: 10%;
+      padding: 12.5% 25%;
       background: hsl(30, 38%, 92%);
     }
     
     .container{
-      width: 500px;
+      width: 540px;
       display: flex;
       flex-direction: row;
       background: hsl(0, 0%, 100%);
+      border-radius: 5px;
+    }
+    .desktop{
+      border-radius: 5px 0 0 5px;
     }
     .box{
       padding: 5%;
     }
     .top-p{
-      padding: 5% 0;
+      padding: 5% 1.5%;
       letter-spacing: 4px;
+      font-family: Montserrat;
     }
     .name{
-      padding: 5% 0;
+      padding: 5% 1.5%;
       font-family: fraunces;
     }
     .description{
-      padding: 10% 0;
+      padding: 5% 1.5%;
+      font-family: Montserrat;
+      font-size: 0.8em;
+      line-height: 1.8em;
     }
     .price{
-      padding: 10% 0;
+      padding: 5% 1.5%;
     }
     b{
       font-family: fraunces;
       font-size: 1.5em;
+      color: hsl(158, 36%, 37%)
+    }
+    span{
+      text-decoration: line-through;
+      padding-left: 1.5em;
+      font-size: 0.8em;
+      
     }
     .btn-div{
-      padding: 10% 0;
+      padding: 5% 1.5%;
     }
     button{
       width: 100%;
       background: hsl(158, 36%, 37%);
       border-radius: 4px;
       border: none;
-      height: 2em;
+      height: 3em;
       color: hsl(0, 0%, 100%);
+      font-family: Montserrat;
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; padding: 10%} 
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
   </style>
 </head>
 <body>
   <div class="container">
-<img class="desktop" src="images/image-product-desktop.jpg" alt="Gabrielle perfume" width="250px">
+<img class="desktop" src="images/image-product-desktop.jpg" alt="Gabrielle perfume" width="270px">
   <div class="box">
 <p class="top-p">PERFUME</p>
 <div class="name">
-  <h2>Gabrielle Essence Eau De Parfum</h2>
+  <h2>Gabrielle <br>Essence Eau <br>De Parfum</h2>
 </div>
   
   <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
@@ -92,7 +110,7 @@
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Noklashn</a>.
   </div>
 </body>
 </html>
