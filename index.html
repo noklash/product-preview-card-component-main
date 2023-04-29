@@ -80,6 +80,34 @@
       color: hsl(0, 0%, 100%);
       font-family: Montserrat;
     }
+    @media screen and (max-width:500px){
+      .container{
+        width:350px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+      }
+      .desktop{
+        display: none;
+      }
+      .mobile{
+        height: 40%;
+        border-radius: 5px 5px 0  0;
+      }
+      .box{
+        padding: 5%;
+      } .top-p, .name, .description, .price{
+        padding: 2%;
+      }
+      body{
+        padding: 5% 2.5%;
+      }
+    }
+    @media screen and (min-width: 500px){
+      .mobile{
+        display:none;
+      }
+    }
     .attribution { font-size: 11px; text-align: center; padding: 10%} 
     .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
   </style>
@@ -87,6 +115,7 @@
 <body>
   <div class="container">
 <img class="desktop" src="images/image-product-desktop.jpg" alt="Gabrielle perfume" width="270px">
+<img class="mobile" src="images/image-product-mobile.jpg">
   <div class="box">
 <p class="top-p">PERFUME</p>
 <div class="name">
